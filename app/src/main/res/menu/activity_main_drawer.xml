@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_clientes"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Clientes Sqlite" />
+        <item
+            android:id="@+id/nav_pedidos"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Pedidos" />
+        <item
+            android:id="@+id/nav_chatFirebase"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Chat firebase" />
+        <item
+            android:id="@+id/nav_mapa"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Mapa" />
+    </group>
+
+    <item android:title="Estadísticas">
+        <menu>
+            <item
+                android:id="@+id/nav_widget"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Widget" />
+            <item
+                android:id="@+id/nav_comunicacion"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Comunicaciones" />
+        </menu>
+    </item>
+
+</menu>
