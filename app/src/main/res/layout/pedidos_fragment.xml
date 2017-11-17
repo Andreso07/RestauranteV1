@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context="com.example.andres.restaurante.ClienteFragment"
     android:layout_gravity="top|center"
-    android:background="@drawable/fondo2">
+    android:background="@drawable/fondo2" >
 
     <!-- TODO: Update blank fragment layout -->
 
