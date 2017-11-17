@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -111,12 +112,13 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+
+
     public void acercaDe(View v){
 
         Intent i = new Intent(this, Acerca_de.class);
 
         startActivity(i);
     }
-
 
 }

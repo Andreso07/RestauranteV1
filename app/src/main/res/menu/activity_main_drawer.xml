@@ -6,7 +6,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_clientes"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@android:drawable/ic_input_add"
             android:title="Clientes Sqlite" />
         <item
             android:id="@+id/nav_pedidos"
@@ -14,11 +14,11 @@
             android:title="Pedidos" />
         <item
             android:id="@+id/nav_chatFirebase"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@android:drawable/stat_notify_chat"
             android:title="Chat firebase" />
         <item
             android:id="@+id/nav_mapa"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@android:drawable/ic_dialog_map"
             android:title="Mapa" />
     </group>
 
@@ -30,7 +30,7 @@
                 android:title="Widget" />
             <item
                 android:id="@+id/nav_comunicacion"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_menu_share"
                 android:title="Comunicaciones" />
         </menu>
     </item>

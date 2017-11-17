@@ -4,14 +4,17 @@
     android:id="@+id/FLPedidos"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.andres.restaurante.ClienteFragment">
+    android:orientation="vertical"
+    tools:context="com.example.andres.restaurante.ClienteFragment"
+    android:layout_gravity="top|center"
+    android:background="@drawable/fondo2">
 
     <!-- TODO: Update blank fragment layout -->
 
     <LinearLayout
         android:id="@+id/LLPedidos"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <LinearLayout
@@ -20,7 +23,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/tvUser"
+                android:id="@+id/tVUsuario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -114,4 +117,14 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fLMenu"
+        android:layout_width="match_parent"
+        android:layout_height="372dp"
+
+        android:layout_marginTop="138dp">
+
+
+    </FrameLayout>
 </FrameLayout>

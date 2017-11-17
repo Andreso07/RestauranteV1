@@ -7,15 +7,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class ChatFragment extends Fragment {
-
-    public ChatFragment(){
-
-    }
+public class menu_Fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.chat_fragment, container, false);
+        return inflater.inflate(R.layout.fragment_menu, container, false);
     }
 }
