@@ -12,7 +12,6 @@
     <!-- TODO: Update blank fragment layout -->
 
     <LinearLayout
-        android:id="@+id/LLPedidos"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -200,7 +199,7 @@
 
                                                     <LinearLayout
                                                         android:layout_width="match_parent"
-                                                        android:layout_height="match_parent"
+                                                        android:layout_height="wrap_content"
                                                         android:layout_marginRight="15dp"
                                                         android:layout_marginTop="5dp"
                                                         android:orientation="horizontal">
@@ -238,7 +237,10 @@
                                                             android:id="@+id/button7"
                                                             android:layout_width="wrap_content"
                                                             android:layout_height="wrap_content"
+                                                            android:layout_marginBottom="10dp"
+                                                            android:layout_marginTop="10dp"
                                                             android:layout_weight="15"
+                                                            android:background="@color/colorPrimary"
                                                             android:text="Ok" />
                                                     </LinearLayout>
 

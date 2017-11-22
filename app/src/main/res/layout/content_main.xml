@@ -9,21 +9,14 @@
     tools:context="com.example.andres.restaurante.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <LinearLayout
+    <Button
+        android:id="@+id/btnAcercaDe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <Button
-            android:id="@+id/btnAcercaDe"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="450dp"
-            android:layout_weight="1"
-            android:onClick="acercaDe"
-            android:text="Acerca de.."
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="447dp" />
-    </LinearLayout>
+        android:layout_weight="1"
+        android:onClick="acercaDe"
+        android:text="Acerca de.."
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="447dp" />
 
 </android.support.constraint.ConstraintLayout>
