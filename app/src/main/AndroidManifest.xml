@@ -20,7 +20,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Acerca_de"></activity>
     </application>
 
 </manifest>

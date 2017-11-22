@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_chatFirebase) {
 
-            fragmentManager.beginTransaction().replace(R.id.contentMain, new ChatFragment()).commit();
+        //    fragmentManager.beginTransaction().replace(R.id.contentMain, new ChatFragment()).commit();
 
         } else if (id == R.id.nav_mapa) {
 
@@ -112,13 +112,13 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    public void acercaDe(View view){
 
-
-    public void acercaDe(View v){
-
-        Intent i = new Intent(this, Acerca_de.class);
-
+        Intent i=new Intent(this,AcercaDe.class);
         startActivity(i);
+
     }
+
+
 
 }

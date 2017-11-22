@@ -14,7 +14,7 @@
     <LinearLayout
         android:id="@+id/LLPedidos"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <LinearLayout
@@ -82,49 +82,231 @@
             android:id="@+id/LLTap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <android.support.design.widget.TabLayout
-                android:id="@+id/tLTabs"
+            <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <android.support.design.widget.TabItem
-                    android:id="@+id/tIPedido"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="PEDIDO" />
+                    android:orientation="vertical">
 
-                <android.support.design.widget.TabItem
-                    android:id="@+id/tIMenu"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="MENU" />
+                    <TabHost
+                        android:id="@+id/tabHost"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-                <android.support.design.widget.TabItem
-                    android:id="@+id/tIMesa"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="MESAS" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
 
-                <android.support.design.widget.TabItem
-                    android:id="@+id/tIOtro"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="OTROS" />
-            </android.support.design.widget.TabLayout>
+                            <TabWidget
+                                android:id="@android:id/tabs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <FrameLayout
+                                android:id="@android:id/tabcontent"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:id="@+id/tab2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <android.support.v7.widget.CardView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                            <android.support.constraint.ConstraintLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent">
+
+                                                <ImageView
+                                                    android:id="@+id/imageView6"
+                                                    android:layout_width="70dp"
+                                                    android:layout_height="70dp"
+                                                    android:layout_weight="1"
+                                                    android:src="@drawable/arrozcamaron" />
+
+                                                <TextView
+                                                    android:id="@+id/textView4"
+                                                    android:layout_width="140dp"
+                                                    android:layout_height="36dp"
+                                                    android:text="Arroz con camarones"
+                                                    tools:layout_editor_absoluteX="88dp"
+                                                    tools:layout_editor_absoluteY="22dp" />
+
+                                                <TextView
+                                                    android:id="@+id/textView5"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="12.000"
+                                                    tools:layout_editor_absoluteX="16dp"
+                                                    tools:layout_editor_absoluteY="69dp" />
+                                            </android.support.constraint.ConstraintLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="vertical">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginLeft="250dp"
+                                                    android:orientation="vertical">
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginRight="15dp"
+                                                        android:layout_marginTop="5dp"
+                                                        android:orientation="horizontal">
+
+                                                        <CheckBox
+                                                            android:id="@+id/checkBox2"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginLeft="20dp"
+                                                            android:layout_weight="1"
+                                                            android:checked="false"
+                                                            android:contextClickable="false"
+                                                            android:cursorVisible="false"
+                                                            android:defaultFocusHighlightEnabled="false"
+                                                            android:focusableInTouchMode="false"
+                                                            android:focusedByDefault="false"
+                                                            android:hapticFeedbackEnabled="false"
+                                                            android:textColorLink="@android:color/holo_blue_dark" />
+
+                                                        <TextView
+                                                            android:id="@+id/textView6"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginRight="20dp"
+                                                            android:layout_weight="0.4"
+                                                            android:text="1" />
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_marginRight="15dp"
+                                                        android:layout_marginTop="5dp"
+                                                        android:orientation="horizontal">
+
+                                                        <Button
+                                                            android:id="@+id/button6"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginLeft="20dp"
+                                                            android:layout_marginRight="1dp"
+                                                            android:layout_weight="50"
+                                                            android:autoText="false"
+                                                            android:background="?android:attr/colorMultiSelectHighlight"
+                                                            android:text="-" />
+
+                                                        <Button
+                                                            android:id="@+id/button5"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginLeft="1dp"
+                                                            android:layout_marginRight="20dp"
+                                                            android:layout_weight="50"
+                                                            android:background="?android:attr/colorActivatedHighlight"
+                                                            android:text="+" />
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:orientation="horizontal"
+                                                        android:paddingLeft="15dp"
+                                                        android:paddingRight="15dp">
+
+                                                        <Button
+                                                            android:id="@+id/button7"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_weight="15"
+                                                            android:text="Ok" />
+                                                    </LinearLayout>
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:id="@+id/LLVacio"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content" />
+                                                </LinearLayout>
+                                            </LinearLayout>
+
+                                        </android.support.v7.widget.CardView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <android.support.v7.widget.CardView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="vertical">
+
+                                            </LinearLayout>
+                                        </android.support.v7.widget.CardView>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/tab1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/textView3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="TextView" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/tab3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </TabHost>
+                </LinearLayout>
+            </ScrollView>
 
         </LinearLayout>
 
     </LinearLayout>
 
-    <FrameLayout
-        android:id="@+id/fLMenu"
-        android:layout_width="match_parent"
-        android:layout_height="372dp"
-
-        android:layout_marginTop="138dp">
-
-
-    </FrameLayout>
 </FrameLayout>
